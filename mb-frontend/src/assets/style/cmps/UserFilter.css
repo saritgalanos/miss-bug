@@ -1,0 +1,15 @@
+.user-filter {
+    background-color: lightgray;
+    padding:5px 10px;
+    margin: 5px;
+}
+
+.user-filter form {
+    display: grid;
+    grid-template-columns: 100px 200px;
+}
+
+
+.user-filter button {
+    background-color: rgb(187, 182, 182);
+}

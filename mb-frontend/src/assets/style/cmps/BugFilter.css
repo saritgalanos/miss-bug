@@ -1,0 +1,43 @@
+.bug-filter {
+    background-color: var(--clr2bg);
+    padding: 8px;
+}
+
+
+.filter-display {
+    display: flex;
+    gap:15px;
+    align-items: center;
+    /* justify-content: center; */
+}
+.bug-filter form {
+    display: grid;
+    grid-template-columns: 100px 200px; 
+}
+
+
+.bug-filter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    position: absolute;
+  }
+  
+  .bug-filter li {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+  
+  .bug-filter li:hover {
+    background-color: #998f8f;
+  }
+
+.bug-filter p {
+    padding-top:10px;
+}
+  /* .sort-dropdown button {
+    border: 0;
+  } */

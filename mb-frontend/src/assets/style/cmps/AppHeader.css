@@ -1,0 +1,38 @@
+.app-header {
+    background-color: var(--clr1);
+    color: var(--clr2bg-light);
+    
+}
+
+.header-container {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-container h1 {
+    display: flex;
+    justify-content: left;
+    margin-left: 40px;
+    flex-grow: 1;
+}
+
+.app-nav {
+    display: flex;
+    gap: 15px;
+}
+
+
+a.active {
+    color: rgb(241, 212, 241);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 720px) {
+    .app-header {
+        color: var(--clr2bg-light);
+    }
+}
