@@ -52,8 +52,8 @@ async function query(filterBy) {
                     })
                     break
                 case 'createAt':
-                    bugsToFilter.sort((a, b) => { 
-                        return a.createdAt - b.createdAt 
+                    bugsToFilter.sort((a, b) => {
+                        return a.createdAt - b.createdAt
                     })
                     break
             }
@@ -86,12 +86,20 @@ async function getById(bugId) {
     }
 }
 
-async function remove(bugId) {
-    const idx = bugs.findIndex(bug => bug._id === bugId)
-    bugs.splice(idx, 1)
-
+async function remove(bugId, loggedinUser) {
     try {
-        _saveBugsToFile('./data/bug.json')
+
+        const idx = bugs.findIndex(bug => bug._id === bugId)
+        if (idx === -1) throw `Couldn't find bug with _id ${bugId}`
+
+
+        const bug = bugs[idx]
+        if (!loggedinUser.isAdmin && bug.creator._id !== loggedinUser._id)
+            throw { msg: `Not your car`, code: 403 }
+
+        bugs.splice(idx, 1)
+        await _saveBugsToFile('./data/bug.json')
+
     } catch (err) {
         loggerService.error(`Had problems removing bug ${bugId}...`)
         throw err
@@ -100,14 +108,23 @@ async function remove(bugId) {
     return `Bug ${bugId} removed`
 }
 
-async function save(bugToSave) {
+async function save(bugToSave, loggedinUser) {
     try {
         if (bugToSave._id) {
             const idx = bugs.findIndex(bug => bug._id === bugToSave._id)
             if (idx === -1) throw 'Bad Id'
+            console.log('trying to update bug for user:'+loggedinUser._id)
+            /*allow update only to admin and creator*/
+            const bug = bugs[idx]
+            if (/*!loggedinUser?.isAdmin && */bug.creator._id !== loggedinUser?._id) {
+              console.log("not your bug")
+                throw `Not your bug`
+            }
             bugs.splice(idx, 1, bugToSave)
         } else {
             bugToSave._id = _makeId()
+            bugToSave.creator = { _id: loggedinUser._id, fullname: loggedinUser.fullname }
+            bugToSave.createdAt = Date.now()
             bugs.push(bugToSave)
         }
         _saveBugsToFile('./data/bug.json')

@@ -3,7 +3,7 @@ import { bugService } from "./bug.service.js"
 //List
 export async function getBugs(req, res) {
     try {
-        let filterBy = {
+         let filterBy = {
             txt: req.query.txt || '',
             minSeverity: +req.query.minSeverity || 0,
             description: req.query.description || '',
@@ -51,10 +51,10 @@ export async function getBug(req, res) {
 export async function removeBug(req, res) {
     var { bugId } = req.params
     try {
-        const response = await bugService.remove(bugId)
+        const response = await bugService.remove(bugId, req.loggedinUser)
         res.send(response)
     } catch (err) {
-        res.status(400).send(`couldn't remove bug`)
+        res.status(400).send(`Couldn't remove bug - ${err}`)
     }
 }
 
@@ -63,10 +63,10 @@ export async function addBug(req, res) {
     const { title, severity, description, createdAt } = req.body
     const bugToSave = { title, description, severity: +severity, createdAt: +createdAt }
     try {
-        const savedBug = await bugService.save(bugToSave)
+        const savedBug = await bugService.save(bugToSave, req.loggedinUser)
         res.send(savedBug)
     } catch (err) {
-        res.status(400).send(`couldn't save bug`)
+        res.status(400).send(`couldn't save bug -  ${err}`)
     }
 
 }
@@ -77,10 +77,11 @@ export async function updateBug(req, res) {
     const { _id, title, severity, description, createdAt } = req.body
     const bugToSave = { _id, title, description, severity: +severity, createdAt: +createdAt }
     try {
-        const savedBug = await bugService.save(bugToSave)
+        const savedBug = await bugService.save(bugToSave, req.loggedinUser)
         res.send(savedBug)
     } catch (err) {
-        res.status(400).send(`couldn't save bug`)
+        console.log(err)
+        res.status(400).send(`couldn't update bug -  ${err}`)
     }
 
 }

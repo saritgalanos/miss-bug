@@ -1,9 +1,7 @@
 import express from 'express'
 import cors from 'cors'
-
-import { bugService } from './api/bug/bug.service.js'
-import { loggerService } from './services/logger.service.js'
 import cookieParser from 'cookie-parser'
+import path from 'path'
 
 const app = express()
 
@@ -21,9 +19,11 @@ app.use(cookieParser())
 
 import {bugRoutes} from './api/bug/bug.routes.js'
 import {userRoutes} from './api/user/user.routes.js'
+import { authRoutes } from './api/auth/auth.routes.js'
 
 app.use('/api/bug', bugRoutes)
 app.use('/api/user', userRoutes)
+app.use('/api/auth', authRoutes)
 
 
 
@@ -38,7 +38,10 @@ app.get('/puki', (req, res) => {
 
 app.get('/', (req, res) => res.send('Hello there'))
 
-
+app.get('/**', (req, res) => {
+    console.log("hi there")
+    res.sendFile(path.resolve('public/index.html'))
+})
 
 
 app.listen(3030, () => console.log('Server ready at port 3030'))

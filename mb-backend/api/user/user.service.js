@@ -9,6 +9,7 @@ export const userService = {
     getById,
     remove,
     save,
+    getByUsername
 }
 
 
@@ -17,36 +18,60 @@ function query() {
     return Promise.resolve(users)
 }
 
-function getById(userId) {
-    const user = users.find(user => user._id === userId)
-    if (!user) return Promise.reject('User not found!')
-    return Promise.resolve(user)
-}
-
-function remove(userId) {
-    users = users.filter(user => user._id !== userId)
-    return _saveUsersToFile()
-}
-
-
-
-async function save(userToSave) {
+async function getById(userId) {
     try {
-        if (userToSave._id) {
-            const idx = users.findIndex(user => user._id === userToSave._id)
-            if (idx === -1) throw 'Bad Id'
-            users.splice(idx, 1, userToSave)
-        } else {
-            userToSave._id = utilService.makeId()
-            users.push(userToSave)
-        }
-        await _saveUsersToFile()
-        return userToSave
+        const user = users.find(user => user._id === userId)
+        if (!user) throw `User not found by userId : ${userId}`
+        return user
     } catch (err) {
-        loggerService.error(`Had problems saving user ${userToSave._id}...`)
+        loggerService.error('userService[getById] : ', err)
         throw err
     }
 }
+
+async function remove(userId) {
+    try {
+        const idx = users.findIndex(user => user._id === userId)
+        if (idx === -1) throw `Couldn't find user with _id ${causerIdrId}`
+
+        users.splice(idx, 1)
+        await _saveUsersToFile()
+    } catch (err) {
+        loggerService.error('userService[remove] : ', err)
+        throw err
+    }
+}
+
+
+
+async function save(user) {
+    try {
+        if (user._id) {
+            const idx = users.findIndex(userInDb => userInDb._id === user._id)
+            if (idx === -1) throw 'Bad Id'
+            users.splice(idx, 1, user)
+        } else {
+            // ADD for now
+            user._id = utilService.makeId()
+            user.score = 10000
+            user.createdAt = Date.now()
+            if (!user.imgUrl) user.imgUrl = 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png'
+            users.push(user)
+        }
+        await _saveUsersToFile()
+        return user
+    } catch (err) {
+        loggerService.error('userService[save] : ', err)
+        throw err
+    }
+}
+
+
+async function getByUsername(username) {
+    const user = users.find(user => user.username === username)
+    return user
+}
+
 
 
 function _saveUsersToFile() {
@@ -61,3 +86,4 @@ function _saveUsersToFile() {
         })
     })
 }
+

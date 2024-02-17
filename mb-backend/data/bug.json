@@ -40,5 +40,23 @@
     "severity": 4,
     "createdAt": 1707658831969,
     "_id": "YfRVTN"
+  },
+  {
+    "title": "creat new",
+    "description": "testing new",
+    "severity": 333,
+    "createdAt": 1708170349161,
+    "_id": "vv3pTc"
+  },
+  {
+    "title": "Tals bug",
+    "description": "first bug by Tal",
+    "severity": 4,
+    "createdAt": 1708183231081,
+    "_id": "2L3P9p",
+    "creator": {
+      "_id": "mybGq",
+      "fullname": "Tal Gal"
+    }
   }
 ]
