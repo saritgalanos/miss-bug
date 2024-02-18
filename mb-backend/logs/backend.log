@@ -171,3 +171,4 @@
 18.2.2024, 17:29:26 - INFO - User login:  | {"_id":"ayb2t","fullname":"admin","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000,"isAdmin":true}
 18.2.2024, 17:30:07 - INFO - User login:  | {"_id":"aJlAp","fullname":"sarit","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
 18.2.2024, 17:32:24 - INFO - User login:  | {"_id":"ayb2t","fullname":"admin","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000,"isAdmin":true}
+18.2.2024, 18:06:44 - INFO - Up and running on port 3030

@@ -20,6 +20,7 @@ app.use(cookieParser())
 import {bugRoutes} from './api/bug/bug.routes.js'
 import {userRoutes} from './api/user/user.routes.js'
 import { authRoutes } from './api/auth/auth.routes.js'
+import { loggerService } from './services/logger.service.js'
 
 app.use('/api/bug', bugRoutes)
 app.use('/api/user', userRoutes)
@@ -43,5 +44,8 @@ app.get('/**', (req, res) => {
     res.sendFile(path.resolve('public/index.html'))
 })
 
-
-app.listen(3030, () => console.log('Server ready at port 3030'))
+const PORT = process.env.PORT || 3030
+app.listen(PORT, () => {
+    loggerService.info('Up and running on port ' + PORT)
+})
+//app.listen(3030, () => console.log('Server ready at port 3030'))
