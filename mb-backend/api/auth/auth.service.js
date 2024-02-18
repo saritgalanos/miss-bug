@@ -21,9 +21,12 @@ function getLoginToken(user) {
 }
 
 function validateToken(token) {
+    console.log("validating there is a logged in user")
     try {
         const json = cryptr.decrypt(token)
         const loggedinUser = JSON.parse(json)
+        console.log (json)
+        console.log(loggedinUser)
         return loggedinUser
 
     } catch (err) {

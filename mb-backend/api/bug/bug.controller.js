@@ -9,6 +9,7 @@ export async function getBugs(req, res) {
             description: req.query.description || '',
             pageIdx: req.query.pageIdx || undefined,
             sortBy: req.query.sortBy || '',
+            userId: req.query.userId || ''
         }
         if (filterBy.pageIdx !== undefined) filterBy.pageIdx = +filterBy.pageIdx
         const bugs = await bugService.query(filterBy)
@@ -22,12 +23,15 @@ export async function getBugs(req, res) {
 //Get
 export async function getBug(req, res) {
 
+    
     var { bugId } = req.params
+        
     let visitedBugs = req.cookies.visitedBugs ? JSON.parse(req.cookies.visitedBugs) : [];
-
+    
+    
     if (visitedBugs.includes(bugId)) {
         // Bug already visited, not adding to the count
-    } else if (visitedBugs.length < 3) {
+    } else if (visitedBugs.length < 10) {
         visitedBugs.push(bugId);
     } else {
         // User has visited 3 or more different bugs, return an error
@@ -40,7 +44,7 @@ export async function getBug(req, res) {
     console.log(`User visited the following bugs: ${visitedBugs.join(', ')}`)
 
     try {
-        const bug = await bugService.getById(bugId)
+        const bug = await bugService.getById(bugId, req.loggedinUser)
         res.send(bug)
     } catch (err) {
         res.status(400).send(`couldn't get bug`)
@@ -50,6 +54,7 @@ export async function getBug(req, res) {
 //Delete
 export async function removeBug(req, res) {
     var { bugId } = req.params
+    console.log (`user ${req.loggedinUser} is trying to remove bug id: ${bugId}`)
     try {
         const response = await bugService.remove(bugId, req.loggedinUser)
         res.send(response)
@@ -74,8 +79,8 @@ export async function addBug(req, res) {
 //Update
 export async function updateBug(req, res) {
 
-    const { _id, title, severity, description, createdAt } = req.body
-    const bugToSave = { _id, title, description, severity: +severity, createdAt: +createdAt }
+    const { _id, title, severity, description, createdAt , creator } = req.body
+    const bugToSave = { _id, title, description, severity: +severity, createdAt: +createdAt, creator }
     try {
         const savedBug = await bugService.save(bugToSave, req.loggedinUser)
         res.send(savedBug)

@@ -12,7 +12,7 @@ export const bugService = {
     getById,
     save,
     remove,
-    getDefaultFilter,
+    getDefaultFilter
 }
 
 

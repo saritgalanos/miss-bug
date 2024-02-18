@@ -6,19 +6,20 @@ import { useCallback, useState } from 'react'
 import { useEffect } from 'react'
 import { BugFilter } from '../cmps/BugFilter.jsx'
 import { utilService } from '../services/util.service.js'
+import { userService } from '../services/user.service.js'
 
 
 export function BugIndex() {
   const [bugs, setBugs] = useState([])
   const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
   const debounceSetFilterBy = useCallback(utilService.debounce(onSetFilterBy,500), [])
+  
 
   useEffect(() => {
     loadBugs()
   }, [filterBy])
 
   async function loadBugs() {
-    console.log('loading bugs')
     const bugs = await bugService.query(filterBy)
     setBugs(bugs)
   }
@@ -40,7 +41,6 @@ export function BugIndex() {
       title: prompt('Bug title?'),
       description: prompt('Bug description?'),
       severity: +prompt('Bug severity?'),
-      createdAt: Date.now()
     }
     try {
       const savedBug = await bugService.save(bug)

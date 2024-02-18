@@ -15,7 +15,14 @@ var bugs = _readJsonFile('./data/bug.json')
 
 async function query(filterBy) {
     try {
+       
         let bugsToFilter = [...bugs]
+        if(filterBy.userId) {
+
+            const regExp = new RegExp(filterBy.userId, 'i')
+            bugsToFilter = bugsToFilter.filter(bug => regExp.test(bug.creator._id))
+        }
+
         if (filterBy.txt) {
             const regExp = new RegExp(filterBy.txt, 'i')
             bugsToFilter = bugsToFilter.filter(bug => regExp.test(bug.title))
@@ -88,15 +95,20 @@ async function getById(bugId) {
 
 async function remove(bugId, loggedinUser) {
     try {
-
+       
+        //console.log(`${loggedinUser._id} is trying to remove bu ${bug.creator._id} `)
         const idx = bugs.findIndex(bug => bug._id === bugId)
+        console.log("remove bug:"+idx)
         if (idx === -1) throw `Couldn't find bug with _id ${bugId}`
 
-
+        console.log(bugs)
         const bug = bugs[idx]
-        if (!loggedinUser.isAdmin && bug.creator._id !== loggedinUser._id)
-            throw { msg: `Not your car`, code: 403 }
-
+        console.log("found bug in db:", bug)
+        if (!loggedinUser.isAdmin && (bug.creator._id !== loggedinUser._id))
+        {
+            console.log(`${loggedinUser._id} is trying to remove bu ${bug.creator._id} `)
+            throw { msg: `Not your bug`, code: 403 }
+        }
         bugs.splice(idx, 1)
         await _saveBugsToFile('./data/bug.json')
 
@@ -116,7 +128,7 @@ async function save(bugToSave, loggedinUser) {
             console.log('trying to update bug for user:'+loggedinUser._id)
             /*allow update only to admin and creator*/
             const bug = bugs[idx]
-            if (/*!loggedinUser?.isAdmin && */bug.creator._id !== loggedinUser?._id) {
+            if (!loggedinUser?.isAdmin && (bug.creator._id !== loggedinUser?._id)) {
               console.log("not your bug")
                 throw `Not your bug`
             }
