@@ -13,10 +13,13 @@ export async function getUser(req, res) {
 
 export async function getUsers(req, res) {
     try {
-        const filterBy = {
-            txt: req.query.txt || '',
-            minBalance: +req.query.minBalance || 0
-        }
+        let filterBy = {
+            fullname: req.query.fullname || '',
+            pageIdx: req.query.pageIdx || undefined
+        } 
+        if (filterBy.pageIdx !== undefined) filterBy.pageIdx = +filterBy.pageIdx
+        console.log('in server get users:',filterBy)
+        
         const users = await userService.query(filterBy)
         res.send(users)
     } catch (err) {

@@ -10,7 +10,7 @@ export function AppFooter () {
     return (
         <footer>
             <p>
-                coffeerights to all version 1.2
+                coffeerights to all version 1.3
             </p>
         </footer>
     )

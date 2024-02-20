@@ -12,10 +12,26 @@ export const userService = {
     getByUsername
 }
 
+const PAGE_SIZE_FOR_USERS = 5
 
+async function query(filterBy) {
+  
+    try {
+        let usersToFilter = [...users]
+        if (filterBy.fullname) {
+            const regExp = new RegExp(filterBy.fullname, 'i')
+            usersToFilter = usersToFilter.filter(user => regExp.test(user.fullname))
+        }
+        if (filterBy.pageIdx !== undefined) {
+            const startIdx = filterBy.pageIdx * PAGE_SIZE_FOR_USERS
+            usersToFilter = usersToFilter.slice(startIdx, startIdx + PAGE_SIZE_FOR_USERS)
+        }
+        return usersToFilter
 
-function query() {
-    return Promise.resolve(users)
+    } catch (err) {
+        loggerService.error('Had problems getting users')
+        throw err
+    }
 }
 
 async function getById(userId) {

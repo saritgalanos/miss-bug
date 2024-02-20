@@ -197,3 +197,24 @@
 20.2.2024, 15:30:47 - INFO - User login:  | {"_id":"aJlAp","fullname":"sarit","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
 20.2.2024, 15:31:17 - INFO - Up and running on port 3030
 20.2.2024, 15:32:03 - INFO - Up and running on port 3030
+20.2.2024, 15:53:59 - INFO - Up and running on port 3030
+20.2.2024, 15:54:06 - INFO - User login:  | {"_id":"ayb2t","fullname":"admin","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000,"isAdmin":true}
+20.2.2024, 15:56:02 - ERROR - Failed to get users | ReferenceError: loggerService is not defined
+20.2.2024, 15:56:15 - INFO - Up and running on port 3030
+20.2.2024, 15:56:25 - INFO - Up and running on port 3030
+20.2.2024, 15:56:30 - ERROR - Failed to get users | ReferenceError: loggerService is not defined
+20.2.2024, 15:56:33 - ERROR - Failed to get users | ReferenceError: loggerService is not defined
+20.2.2024, 16:02:35 - ERROR - Failed to get users | ReferenceError: loggerService is not defined
+20.2.2024, 16:02:37 - ERROR - Failed to get users | ReferenceError: loggerService is not defined
+20.2.2024, 16:05:20 - INFO - Up and running on port 3030
+20.2.2024, 16:05:31 - ERROR - Failed to get users | ReferenceError: loggerService is not defined
+20.2.2024, 16:05:42 - ERROR - Failed to get users | ReferenceError: loggerService is not defined
+20.2.2024, 16:07:27 - INFO - Up and running on port 3030
+20.2.2024, 16:07:32 - ERROR - Failed to get users | ReferenceError: loggerService is not defined
+20.2.2024, 16:09:06 - ERROR - Failed to get users | ReferenceError: loggerService is not defined
+20.2.2024, 16:09:20 - ERROR - Failed to get users | ReferenceError: loggerService is not defined
+20.2.2024, 16:10:04 - INFO - Up and running on port 3030
+20.2.2024, 16:10:23 - INFO - Up and running on port 3030
+20.2.2024, 16:10:24 - INFO - Up and running on port 3030
+20.2.2024, 16:10:46 - INFO - Up and running on port 3030
+20.2.2024, 16:11:17 - INFO - Up and running on port 3030

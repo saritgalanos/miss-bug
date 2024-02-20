@@ -84,7 +84,7 @@ export function UserIndex() {
   }
 
   function onSetFilterBy(filterBy) {
-    console.log(filterBy)
+    console.log('onSetFilterBy: user:',filterBy)
     setFilterBy(prevFilter => ({ ...prevFilter, ...filterBy }))
   }
 

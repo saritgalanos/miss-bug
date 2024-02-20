@@ -36,13 +36,13 @@ export function UserFilter({ filterBy, onSetFilterBy }) {
     }
 
 
-    const { txt } = filterByToEdit
+    const { fullname } = filterByToEdit
     return (
         <section className="user-filter">
             <h2>Filter Our Users</h2>
             <form onSubmit={onSubmitFilter}>
-                <label htmlFor="txt">Full Name: </label>
-                <input value={txt} onChange={handleChange} type="text" placeholder="By Full Name" id="txt" name="txt" />
+                <label htmlFor="fullname">Full Name: </label>
+                <input value={fullname} onChange={handleChange} type="text" placeholder="By Full Name" id="fullname" name="fullname" />
 
                 <button onClick={onSubmitFilter}>Set Filter</button>
             </form>
