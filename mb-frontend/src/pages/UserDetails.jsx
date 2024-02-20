@@ -1,21 +1,23 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { BugList } from "../cmps/BugList"
 import { bugService } from "../services/bug.service"
 import { showErrorMsg } from "../services/event-bus.service"
+import { UserContext } from "../contexts/UserContext"
 
 export function UserDetails() {
-    const [loggedinUser, setLoggedinUser] = useState(userService.getLoggedinUser())
+    const {loggedinUser, setLoggedinUser} = useContext(UserContext)
     const [bugs, setBugs] = useState([])
 
+ console.log("profile:", loggedinUser)
     useEffect(() => {
         loadBugs()
-    }, [bugs])
+    }, [loggedinUser])
 
 
     async function loadBugs() {
         if (loggedinUser?._id != null) {
             const bugs = await bugService.query({ userId: loggedinUser?._id })
-            setBugs(bugs)
+            setBugs([...bugs])
         }
     }
 

@@ -1,10 +1,12 @@
 
 import { Link } from 'react-router-dom'
 import { BugPreview } from './BugPreview'
+import { useContext } from 'react'
+import { UserContext } from '../contexts/UserContext'
 
 export function BugList({ bugs, onRemoveBug, onEditBug }) {
 
-  const loggedinUser = userService.getLoggedinUser()
+  const {loggedinUser, setLoggedinUser} = useContext(UserContext)
 
 
   function isAllowed(bug) {

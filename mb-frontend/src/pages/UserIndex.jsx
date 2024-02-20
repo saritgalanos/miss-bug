@@ -12,7 +12,7 @@ export function UserIndex() {
   const [users, setUsers] = useState([])
   const [filterBy, setFilterBy] = useState(userService.getDefaultFilter())
   const debounceSetFilterBy = useCallback(utilService.debounce(onSetFilterBy, 500), [])
-  const [loggedinUser, setLoggedinUser] = useState(userService.getLoggedinUser())
+  const {loggedinUser, setLoggedinUser} = useContext(UserContext)
 
 
   useEffect(() => {

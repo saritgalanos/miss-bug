@@ -172,3 +172,28 @@
 18.2.2024, 17:30:07 - INFO - User login:  | {"_id":"aJlAp","fullname":"sarit","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
 18.2.2024, 17:32:24 - INFO - User login:  | {"_id":"ayb2t","fullname":"admin","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000,"isAdmin":true}
 18.2.2024, 18:06:44 - INFO - Up and running on port 3030
+19.2.2024, 16:36:16 - INFO - Up and running on port 3030
+19.2.2024, 16:53:08 - INFO - User login:  | {"_id":"ayb2t","fullname":"admin","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000,"isAdmin":true}
+19.2.2024, 16:53:33 - DEBUG - auth.service - signup with username: sss, fullname: sss
+19.2.2024, 16:53:33 - INFO - User signup: | {"_id":"X6GvJ","fullname":"sss","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+19.2.2024, 16:53:33 - DEBUG - auth.route - new account created: {"username":"sss","password":"$2b$10$5/ILsBYg5lwyCTdIotyIgumzErCJCL.EVC.LuQDKoKAvEaqTjB6ji","fullname":"sss","_id":"X6GvJ","score":10000,"createdAt":1708354413192,"imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"}
+19.2.2024, 16:53:34 - INFO - Up and running on port 3030
+19.2.2024, 16:54:52 - INFO - User login:  | {"_id":"SAZXR","fullname":"aaa","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+19.2.2024, 16:56:56 - INFO - User login:  | {"_id":"aJlAp","fullname":"sarit","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+19.2.2024, 16:57:09 - INFO - User login:  | {"_id":"aJlAp","fullname":"sarit","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+19.2.2024, 16:58:42 - INFO - User login:  | {"_id":"SAZXR","fullname":"aaa","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+19.2.2024, 17:00:14 - INFO - User login:  | {"_id":"aJlAp","fullname":"sarit","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+19.2.2024, 17:00:26 - INFO - User login:  | {"_id":"ayb2t","fullname":"admin","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000,"isAdmin":true}
+19.2.2024, 17:09:00 - INFO - User login:  | {"_id":"aJlAp","fullname":"sarit","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+19.2.2024, 17:09:47 - INFO - User login:  | {"_id":"SAZXR","fullname":"aaa","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+19.2.2024, 17:13:44 - INFO - User login:  | {"_id":"aJlAp","fullname":"sarit","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+19.2.2024, 17:17:39 - INFO - User login:  | {"_id":"SAZXR","fullname":"aaa","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+19.2.2024, 17:18:11 - INFO - User login:  | {"_id":"aJlAp","fullname":"sarit","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+19.2.2024, 17:20:21 - INFO - User login:  | {"_id":"SAZXR","fullname":"aaa","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+19.2.2024, 17:21:17 - INFO - User login:  | {"_id":"aJlAp","fullname":"sarit","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+19.2.2024, 17:21:26 - INFO - User login:  | {"_id":"SAZXR","fullname":"aaa","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+20.2.2024, 15:30:13 - INFO - Up and running on port 3030
+20.2.2024, 15:30:35 - INFO - User login:  | {"_id":"SAZXR","fullname":"aaa","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+20.2.2024, 15:30:47 - INFO - User login:  | {"_id":"aJlAp","fullname":"sarit","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+20.2.2024, 15:31:17 - INFO - Up and running on port 3030
+20.2.2024, 15:32:03 - INFO - Up and running on port 3030

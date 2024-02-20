@@ -18,7 +18,6 @@
     "createdAt": 1708269346639,
     "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
   },
-
   {
     "username": "sarit",
     "fullname": "sarit",
@@ -27,6 +26,14 @@
     "_id": "aJlAp",
     "createdAt": 1708269346639,
     "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+  },
+  {
+    "username": "sss",
+    "password": "$2b$10$5/ILsBYg5lwyCTdIotyIgumzErCJCL.EVC.LuQDKoKAvEaqTjB6ji",
+    "fullname": "sss",
+    "_id": "X6GvJ",
+    "score": 10000,
+    "createdAt": 1708354413192,
+    "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
   }
-
 ]

@@ -1,17 +1,20 @@
 
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { UserMsg } from './UserMsg'
 import { NavLink } from 'react-router-dom'
 import { LoginSignup } from "./LoginSignup.jsx"
 import { userService } from "../services/user.service.js"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
+import { UserContext } from '../contexts/UserContext.js'
 
 export function AppHeader() {
   useEffect(() => {
     // component did mount when dependancy array is empty
   }, [])
 
-  const [loggedinUser, setLoggedinUser] = useState(userService.getLoggedinUser())
+  const {loggedinUser, setLoggedinUser} = useContext(UserContext)
+  console.log('loggedinUser:', loggedinUser)
+  
 
 
   async function onLogin(credentials) {
