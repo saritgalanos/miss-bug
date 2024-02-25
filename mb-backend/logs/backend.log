@@ -514,3 +514,9 @@
 25.2.2024, 17:23:24 - INFO - Sample log request
 25.2.2024, 17:23:40 - INFO - Sample log request
 25.2.2024, 18:07:18 - INFO - Up and running on port 3030
+25.2.2024, 19:47:00 - INFO - Up and running on port 3030
+25.2.2024, 19:49:50 - DEBUG - auth.service - signup with username: Sarit, fullname: sarit
+25.2.2024, 19:49:50 - DEBUG - auth.route - new account created: {"username":"Sarit","password":"$2b$10$4vnEo5q/nP4kQYhoGKQVJO1lrkojI3zeSL/ugWqXnN/LKVCGL9Zq2","fullname":"sarit","score":100,"_id":"65db7dbe81a3ed3be31e10fa"}
+25.2.2024, 19:49:50 - INFO - User signup: | {"_id":"65db7dbe81a3ed3be31e10fa","fullname":"sarit","imgUrl":null,"score":100}
+25.2.2024, 19:50:45 - INFO - Up and running on port 3030
+25.2.2024, 19:50:51 - INFO - Up and running on port 3030
