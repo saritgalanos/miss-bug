@@ -22,3 +22,7 @@
 @import "cmps/UserFilter.css";
 @import "cmps/UserPreview.css";
 @import "cmps/UserList.css";
+
+
+/* Pages */
+@import "pages/MsgIndex.css";

@@ -1,0 +1,21 @@
+.msg-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.msg-list li {
+    background-color: lightgreen;
+    padding: 5px;
+    margin: 5px;
+}
+
+.msg-list a {
+    padding: 10px;
+}
+
+.msg-list h3 {
+    background-color: #ddd;
+    padding: 10px 5px;
+    margin: 5px;
+}

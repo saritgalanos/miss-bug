@@ -4,13 +4,13 @@ import { showSuccessMsg } from '../services/event-bus.service'
 export function AppFooter () {
 
     useEffect(() => {
-        // component did mount when dependancy array is empty
+        // component did mount when dependency array is empty
     }, [])
 
     return (
         <footer>
             <p>
-                coffeerights to all version 1.3
+                coffeerights to all version 1.4
             </p>
         </footer>
     )

@@ -218,3 +218,299 @@
 20.2.2024, 16:10:24 - INFO - Up and running on port 3030
 20.2.2024, 16:10:46 - INFO - Up and running on port 3030
 20.2.2024, 16:11:17 - INFO - Up and running on port 3030
+21.2.2024, 16:21:01 - INFO - Up and running on port 3030
+21.2.2024, 16:25:08 - INFO - Up and running on port 3030
+21.2.2024, 16:27:02 - INFO - Up and running on port 3030
+21.2.2024, 16:29:39 - INFO - Up and running on port 3030
+21.2.2024, 16:30:42 - INFO - Up and running on port 3030
+21.2.2024, 16:30:54 - INFO - Up and running on port 3030
+21.2.2024, 17:10:05 - INFO - Up and running on port 3030
+21.2.2024, 17:11:32 - INFO - Up and running on port 3030
+21.2.2024, 17:12:06 - INFO - Up and running on port 3030
+21.2.2024, 17:13:26 - INFO - Up and running on port 3030
+21.2.2024, 17:13:38 - INFO - Up and running on port 3030
+22.2.2024, 18:52:00 - INFO - Up and running on port 3030
+22.2.2024, 18:55:35 - INFO - Up and running on port 3030
+22.2.2024, 18:57:21 - INFO - Up and running on port 3030
+22.2.2024, 19:02:40 - INFO - Up and running on port 3030
+22.2.2024, 19:06:23 - INFO - Up and running on port 3030
+22.2.2024, 19:12:04 - DEBUG - auth.service - signup with username: xxx, fullname: xxxx xxx
+22.2.2024, 19:12:04 - ERROR - Failed to signup ReferenceError: users is not defined
+22.2.2024, 19:15:59 - INFO - Up and running on port 3030
+22.2.2024, 19:16:05 - DEBUG - auth.service - signup with username: xxx, fullname: xxxx xxx
+22.2.2024, 19:16:05 - DEBUG - auth.route - new account created: {"username":"xxx","password":"$2b$10$XVo3t4HEA/i.lfwKGsPyuuGWh7hCqKPVLznEHbFUJ.u0cPf/84dUS","fullname":"xxxx xxx","_id":"YknmV","score":10000,"createdAt":1708622165282,"imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"}
+22.2.2024, 19:16:05 - INFO - User signup: | {"_id":"YknmV","fullname":"xxxx xxx","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+22.2.2024, 19:16:06 - INFO - Up and running on port 3030
+22.2.2024, 19:18:02 - INFO - Up and running on port 3030
+22.2.2024, 19:19:22 - WARN - undefined tried to perform an admin action
+22.2.2024, 19:23:00 - INFO - Up and running on port 3030
+22.2.2024, 19:23:07 - INFO - Up and running on port 3030
+22.2.2024, 19:23:12 - INFO - Up and running on port 3030
+22.2.2024, 19:28:53 - INFO - User login:  | {"_id":"65d782e799673396a4e0e17c","fullname":"xxxx xxx","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+22.2.2024, 19:30:01 - INFO - Up and running on port 3030
+22.2.2024, 19:30:05 - INFO - User login:  | {"_id":"65d782e799673396a4e0e17c","fullname":"xxxx xxx","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000,"isAdmin":true}
+22.2.2024, 19:31:26 - ERROR - error userService[getById] for user  65d784db99673396a4e0e17e: | TypeError: Cannot convert undefined or null to object
+22.2.2024, 19:31:26 - ERROR - Failed to get user | TypeError: Cannot convert undefined or null to object
+22.2.2024, 19:32:30 - INFO - Up and running on port 3030
+22.2.2024, 19:53:54 - INFO - Up and running on port 3030
+22.2.2024, 19:54:09 - ERROR - Failed to get user | TypeError: Cannot convert undefined or null to object
+22.2.2024, 19:54:09 - ERROR - error userService[getById] for user  65d784db99673396a4e0e17e: | TypeError: Cannot convert undefined or null to object
+22.2.2024, 19:55:05 - INFO - Up and running on port 3030
+22.2.2024, 19:55:08 - ERROR - error userService[getById] for user  65d784db99673396a4e0e17e: | TypeError: Cannot convert undefined or null to object
+22.2.2024, 19:55:08 - ERROR - Failed to get user | TypeError: Cannot convert undefined or null to object
+22.2.2024, 19:55:38 - INFO - Up and running on port 3030
+22.2.2024, 19:56:36 - INFO - Up and running on port 3030
+22.2.2024, 19:56:38 - ERROR - error userService[getById] for user  65d784db99673396a4e0e17e: | TypeError: Cannot convert undefined or null to object
+22.2.2024, 19:56:38 - ERROR - Failed to get user | TypeError: Cannot convert undefined or null to object
+22.2.2024, 19:58:22 - INFO - Up and running on port 3030
+22.2.2024, 19:58:29 - ERROR - error userService[getById] for user  65d784db99673396a4e0e17e: | TypeError: Cannot convert undefined or null to object
+22.2.2024, 19:58:29 - ERROR - Failed to get user | TypeError: Cannot convert undefined or null to object
+22.2.2024, 20:00:26 - INFO - Up and running on port 3030
+22.2.2024, 20:00:30 - ERROR - Failed to get user | ReferenceError: sole is not defined
+22.2.2024, 20:00:30 - ERROR - error userService[getById] for user  65d784db99673396a4e0e17e: | ReferenceError: sole is not defined
+22.2.2024, 20:04:28 - INFO - Up and running on port 3030
+22.2.2024, 20:04:46 - ERROR - error userService[getById] for user  65d784db99673396a4e0e17e: | ReferenceError: ObjectId is not defined
+22.2.2024, 20:04:46 - ERROR - Failed to get user | ReferenceError: ObjectId is not defined
+22.2.2024, 20:05:31 - INFO - Up and running on port 3030
+23.2.2024, 9:42:40 - INFO - Up and running on port 3030
+23.2.2024, 9:43:03 - INFO - Up and running on port 3030
+23.2.2024, 9:43:48 - INFO - Up and running on port 3030
+23.2.2024, 9:44:35 - INFO - Up and running on port 3030
+23.2.2024, 9:45:04 - INFO - Up and running on port 3030
+23.2.2024, 9:45:59 - INFO - Up and running on port 3030
+23.2.2024, 9:55:10 - INFO - Up and running on port 3030
+23.2.2024, 9:57:04 - INFO - Up and running on port 3030
+23.2.2024, 9:57:18 - INFO - Up and running on port 3030
+23.2.2024, 9:58:00 - INFO - Up and running on port 3030
+23.2.2024, 10:00:06 - INFO - Up and running on port 3030
+23.2.2024, 10:01:12 - INFO - Up and running on port 3030
+23.2.2024, 10:04:02 - INFO - Up and running on port 3030
+23.2.2024, 10:07:39 - INFO - Up and running on port 3030
+23.2.2024, 10:08:55 - INFO - Up and running on port 3030
+23.2.2024, 10:10:35 - INFO - Up and running on port 3030
+23.2.2024, 10:13:23 - INFO - Up and running on port 3030
+23.2.2024, 10:14:22 - INFO - Up and running on port 3030
+24.2.2024, 12:20:28 - INFO - Up and running on port 3030
+24.2.2024, 12:22:24 - INFO - Up and running on port 3030
+24.2.2024, 12:45:24 - INFO - Up and running on port 3030
+24.2.2024, 12:46:04 - INFO - Up and running on port 3030
+24.2.2024, 12:50:27 - INFO - Up and running on port 3030
+24.2.2024, 12:56:01 - INFO - Up and running on port 3030
+24.2.2024, 12:56:26 - INFO - User login:  | {"_id":"65d782e799673396a4e0e17c","fullname":"xxxx xxx","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+24.2.2024, 13:01:58 - INFO - Up and running on port 3030
+24.2.2024, 13:02:56 - INFO - Up and running on port 3030
+24.2.2024, 13:04:13 - INFO - Up and running on port 3030
+24.2.2024, 13:05:08 - INFO - Up and running on port 3030
+24.2.2024, 13:06:11 - INFO - Up and running on port 3030
+24.2.2024, 13:56:18 - INFO - Up and running on port 3030
+24.2.2024, 14:00:26 - INFO - Up and running on port 3030
+24.2.2024, 14:01:08 - ERROR - Had problems saving bug vkGaO7...
+24.2.2024, 14:06:04 - INFO - Up and running on port 3030
+24.2.2024, 14:15:09 - INFO - Up and running on port 3030
+24.2.2024, 14:16:59 - INFO - Up and running on port 3030
+24.2.2024, 14:20:18 - INFO - Up and running on port 3030
+24.2.2024, 14:22:51 - INFO - Up and running on port 3030
+24.2.2024, 14:24:25 - INFO - Up and running on port 3030
+24.2.2024, 14:24:43 - INFO - User login:  | {"_id":"65d782e799673396a4e0e17c","fullname":"xxxx xxx","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000}
+24.2.2024, 14:24:51 - ERROR - cannot remove bug 65d9c38d99673396a4e0e188 | ReferenceError: bugToDelete is not defined
+24.2.2024, 14:25:28 - INFO - Up and running on port 3030
+24.2.2024, 14:25:32 - ERROR - cannot remove bug 65d9c38d99673396a4e0e188 | ReferenceError: bugToDelete is not defined
+24.2.2024, 14:27:31 - INFO - Up and running on port 3030
+24.2.2024, 14:27:32 - ERROR - cannot remove bug 65d9c38d99673396a4e0e188 | ReferenceError: bugToDelete is not defined
+24.2.2024, 14:29:43 - INFO - Up and running on port 3030
+24.2.2024, 14:29:51 - ERROR - cannot remove bug 65d9c38d99673396a4e0e188 | ReferenceError: bugToDelete is not defined
+24.2.2024, 14:32:07 - INFO - Up and running on port 3030
+24.2.2024, 14:32:08 - ERROR - cannot remove bug 65d9c38d99673396a4e0e188 | ReferenceError: bugToDelete is not defined
+24.2.2024, 14:32:49 - INFO - Up and running on port 3030
+24.2.2024, 14:32:51 - ERROR - cannot remove bug 65d9c38d99673396a4e0e188 | ReferenceError: bug is not defined
+24.2.2024, 14:35:22 - INFO - Up and running on port 3030
+24.2.2024, 14:35:24 - ERROR - cannot remove bug 65d9c38d99673396a4e0e188 | ReferenceError: bug is not defined
+24.2.2024, 14:38:43 - INFO - Up and running on port 3030
+24.2.2024, 14:38:44 - ERROR - cannot remove bug 65d9c38d99673396a4e0e188 | ReferenceError: bug is not defined
+24.2.2024, 14:39:11 - INFO - Up and running on port 3030
+24.2.2024, 14:39:13 - ERROR - cannot remove bug 65d9c38d99673396a4e0e188 | {"msg":"Not your bug","code":403}
+24.2.2024, 14:39:55 - INFO - Up and running on port 3030
+24.2.2024, 14:40:30 - INFO - Up and running on port 3030
+24.2.2024, 14:42:50 - INFO - Up and running on port 3030
+24.2.2024, 14:44:16 - ERROR - cannot update bug 65d9c38d99673396a4e0e189 | {"msg":"Not your bug","code":403}
+24.2.2024, 14:49:11 - INFO - Up and running on port 3030
+24.2.2024, 14:49:40 - ERROR - bugService, can not add bug : ReferenceError: bug is not defined
+24.2.2024, 14:49:55 - INFO - Up and running on port 3030
+24.2.2024, 14:50:37 - INFO - Up and running on port 3030
+24.2.2024, 14:51:06 - INFO - Up and running on port 3030
+24.2.2024, 14:52:43 - INFO - Up and running on port 3030
+24.2.2024, 14:54:48 - INFO - Up and running on port 3030
+24.2.2024, 14:55:17 - ERROR - Had problems getting bugs
+24.2.2024, 14:55:34 - INFO - Up and running on port 3030
+24.2.2024, 14:55:35 - ERROR - Had problems getting bugs
+24.2.2024, 14:56:37 - INFO - Up and running on port 3030
+24.2.2024, 14:57:02 - INFO - Up and running on port 3030
+24.2.2024, 14:57:14 - INFO - Up and running on port 3030
+24.2.2024, 14:57:39 - INFO - Up and running on port 3030
+24.2.2024, 14:57:41 - ERROR - Had problems getting bugs
+24.2.2024, 15:04:57 - INFO - Up and running on port 3030
+24.2.2024, 15:05:11 - INFO - Up and running on port 3030
+24.2.2024, 15:05:27 - ERROR - Had problems getting bugs
+24.2.2024, 15:07:52 - INFO - Up and running on port 3030
+24.2.2024, 15:17:39 - INFO - Up and running on port 3030
+24.2.2024, 15:18:22 - INFO - Up and running on port 3030
+24.2.2024, 15:18:37 - INFO - Up and running on port 3030
+24.2.2024, 15:19:43 - INFO - Up and running on port 3030
+24.2.2024, 15:19:53 - ERROR - Had problems getting bugs
+24.2.2024, 15:20:42 - INFO - Up and running on port 3030
+24.2.2024, 15:20:44 - ERROR - Had problems getting bugs
+24.2.2024, 15:21:54 - ERROR - Had problems getting bugs
+24.2.2024, 15:22:34 - INFO - Up and running on port 3030
+24.2.2024, 15:22:37 - ERROR - Had problems getting bugs
+24.2.2024, 15:23:43 - INFO - Up and running on port 3030
+24.2.2024, 15:24:28 - INFO - Up and running on port 3030
+24.2.2024, 15:25:59 - INFO - Up and running on port 3030
+24.2.2024, 15:26:11 - INFO - Up and running on port 3030
+24.2.2024, 15:26:39 - INFO - Up and running on port 3030
+24.2.2024, 15:26:58 - INFO - Up and running on port 3030
+24.2.2024, 15:29:06 - INFO - Up and running on port 3030
+24.2.2024, 15:29:37 - INFO - Up and running on port 3030
+24.2.2024, 15:30:07 - INFO - Up and running on port 3030
+24.2.2024, 15:32:03 - INFO - User login:  | {"_id":"65d7802399673396a4e0e17a","fullname":"admin","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000,"isAdmin":true}
+24.2.2024, 16:28:15 - DEBUG - auth.service - signup with username: galanos, fullname: sarit
+24.2.2024, 16:28:15 - ERROR - Failed to signup TypeError: userService.save is not a function
+24.2.2024, 16:30:10 - INFO - Up and running on port 3030
+24.2.2024, 16:33:27 - INFO - Up and running on port 3030
+24.2.2024, 16:34:39 - DEBUG - auth.service - signup with username: saritga, fullname: sarit
+24.2.2024, 16:34:39 - ERROR - Failed to signup TypeError: userService.save is not a function
+24.2.2024, 16:35:57 - INFO - Up and running on port 3030
+24.2.2024, 16:36:17 - DEBUG - auth.service - signup with username: saritga, fullname: sarit
+24.2.2024, 16:36:17 - DEBUG - auth.route - new account created: {"username":"saritga","password":"$2b$10$JqhTOdL5sI50aefCioUcf.KhGV7lBQYrscnQbLYNaRwlNTWe9IgXK","fullname":"sarit","score":100,"_id":"65d9fee1e9690df58c1d2699"}
+24.2.2024, 16:36:17 - INFO - User signup: | {"_id":"65d9fee1e9690df58c1d2699","fullname":"sarit","imgUrl":null,"score":100}
+24.2.2024, 16:38:04 - INFO - Up and running on port 3030
+24.2.2024, 16:38:29 - INFO - Up and running on port 3030
+24.2.2024, 16:38:54 - ERROR - cannot update bug 65d9e45d42bd496c75af5cf3 | {"msg":"Not your bug","code":403}
+24.2.2024, 17:02:36 - INFO - Up and running on port 3030
+24.2.2024, 17:03:42 - INFO - Up and running on port 3030
+24.2.2024, 17:09:43 - INFO - User login:  | {"_id":"65d7802399673396a4e0e17a","fullname":"admin","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000,"isAdmin":true}
+24.2.2024, 17:09:52 - INFO - User login:  | {"_id":"65d9fee1e9690df58c1d2699","fullname":"sarit","imgUrl":null,"score":100}
+25.2.2024, 13:56:42 - INFO - Up and running on port 3030
+25.2.2024, 14:02:35 - DEBUG - auth.service - signup with username: sarit.galanos, fullname: Sarit Galanos
+25.2.2024, 14:02:35 - DEBUG - auth.route - new account created: {"username":"sarit.galanos","password":"$2b$10$8UAjvTIdQzFRavmWOYoWh.pD2djlLI8Aj74WOGO5Q2fCOcLP5QXle","fullname":"Sarit Galanos","score":100,"_id":"65db2c5b1880e36d17d06eba"}
+25.2.2024, 14:02:35 - INFO - User signup: | {"_id":"65db2c5b1880e36d17d06eba","fullname":"Sarit Galanos","imgUrl":null,"score":100}
+25.2.2024, 14:11:11 - INFO - Up and running on port 3030
+25.2.2024, 14:11:15 - INFO - Sample log request
+25.2.2024, 14:11:15 - ERROR - error userService[getById] for user  65d9ffa07137230e3b715a6b: | TypeError: Cannot convert undefined or null to object
+25.2.2024, 14:11:15 - ERROR - Failed to add msg | TypeError: Cannot convert undefined or null to object
+25.2.2024, 14:12:27 - INFO - User login:  | {"_id":"65db2c5b1880e36d17d06eba","fullname":"Sarit Galanos","imgUrl":null,"score":100}
+25.2.2024, 14:14:59 - INFO - Sample log request
+25.2.2024, 14:14:59 - ERROR - error userService[getById] for user  65d9ffa07137230e3b715a6b: | TypeError: Cannot convert undefined or null to object
+25.2.2024, 14:14:59 - ERROR - Failed to add msg | TypeError: Cannot convert undefined or null to object
+25.2.2024, 15:00:51 - INFO - Up and running on port 3030
+25.2.2024, 15:01:16 - INFO - Sample log request
+25.2.2024, 15:02:04 - INFO - Up and running on port 3030
+25.2.2024, 15:02:18 - INFO - Sample log request
+25.2.2024, 15:02:31 - INFO - Sample log request
+25.2.2024, 15:03:48 - INFO - Sample log request
+25.2.2024, 15:04:39 - INFO - Sample log request
+25.2.2024, 15:05:57 - INFO - Up and running on port 3030
+25.2.2024, 15:06:38 - WARN - undefined tried to perform an admin action
+25.2.2024, 15:07:25 - INFO - Up and running on port 3030
+25.2.2024, 15:07:27 - WARN - Sarit Galanos tried to perform an admin action
+25.2.2024, 15:07:41 - INFO - Up and running on port 3030
+25.2.2024, 15:07:41 - WARN - Sarit Galanos tried to perform an admin action
+25.2.2024, 15:39:19 - INFO - Up and running on port 3030
+25.2.2024, 15:39:50 - INFO - Sample log request
+25.2.2024, 15:41:11 - INFO - Up and running on port 3030
+25.2.2024, 15:41:20 - INFO - Sample log request
+25.2.2024, 15:41:55 - INFO - Up and running on port 3030
+25.2.2024, 15:42:00 - INFO - Sample log request
+25.2.2024, 15:47:02 - INFO - Up and running on port 3030
+25.2.2024, 15:47:08 - INFO - Sample log request
+25.2.2024, 15:47:12 - INFO - Sample log request
+25.2.2024, 15:47:12 - ERROR - cannot find msgs | ReferenceError: msgs is not defined
+25.2.2024, 15:47:12 - ERROR - Cannot get msgs | ReferenceError: msgs is not defined
+25.2.2024, 15:47:38 - INFO - Up and running on port 3030
+25.2.2024, 15:47:41 - INFO - Sample log request
+25.2.2024, 15:48:44 - INFO - Up and running on port 3030
+25.2.2024, 15:48:47 - INFO - Sample log request
+25.2.2024, 15:49:19 - INFO - Up and running on port 3030
+25.2.2024, 15:49:21 - INFO - Sample log request
+25.2.2024, 15:49:53 - INFO - Up and running on port 3030
+25.2.2024, 15:49:55 - INFO - Sample log request
+25.2.2024, 15:50:34 - INFO - Up and running on port 3030
+25.2.2024, 15:50:38 - INFO - Sample log request
+25.2.2024, 15:50:58 - INFO - Up and running on port 3030
+25.2.2024, 15:51:01 - INFO - Sample log request
+25.2.2024, 15:51:37 - INFO - Up and running on port 3030
+25.2.2024, 15:51:40 - INFO - Sample log request
+25.2.2024, 15:51:53 - INFO - Up and running on port 3030
+25.2.2024, 15:51:55 - INFO - Sample log request
+25.2.2024, 15:52:05 - INFO - Up and running on port 3030
+25.2.2024, 15:52:06 - INFO - Sample log request
+25.2.2024, 15:52:13 - INFO - Up and running on port 3030
+25.2.2024, 15:52:15 - INFO - Sample log request
+25.2.2024, 15:53:21 - DEBUG - auth.service - signup with username: roni, fullname: Roni
+25.2.2024, 15:53:21 - DEBUG - auth.route - new account created: {"username":"roni","password":"$2b$10$OEqw.EaOTzVxThCldZ8ZpeGfGJPtD.wNZ1TXEDGvieZd5KEIu886O","fullname":"Roni","score":100,"_id":"65db46518b32b7863a88b08f"}
+25.2.2024, 15:53:21 - INFO - User signup: | {"_id":"65db46518b32b7863a88b08f","fullname":"Roni","imgUrl":null,"score":100}
+25.2.2024, 15:54:24 - INFO - Sample log request
+25.2.2024, 15:54:38 - INFO - Sample log request
+25.2.2024, 15:55:56 - INFO - Sample log request
+25.2.2024, 15:56:55 - INFO - Up and running on port 3030
+25.2.2024, 15:57:28 - INFO - Sample log request
+25.2.2024, 15:57:53 - INFO - Up and running on port 3030
+25.2.2024, 15:57:55 - INFO - Sample log request
+25.2.2024, 15:59:06 - INFO - Up and running on port 3030
+25.2.2024, 15:59:09 - INFO - Sample log request
+25.2.2024, 16:00:26 - INFO - Up and running on port 3030
+25.2.2024, 16:22:04 - INFO - User login:  | {"_id":"65db46518b32b7863a88b08f","fullname":"Roni","imgUrl":null,"score":100}
+25.2.2024, 16:22:19 - INFO - User login:  | {"_id":"65db2c5b1880e36d17d06eba","fullname":"Sarit Galanos","imgUrl":null,"score":100}
+25.2.2024, 16:22:32 - INFO - User login:  | {"_id":"65d9fee1e9690df58c1d2699","fullname":"sarit","imgUrl":null,"score":100}
+25.2.2024, 16:26:56 - INFO - Sample log request
+25.2.2024, 16:28:37 - INFO - Sample log request
+25.2.2024, 16:29:14 - INFO - Sample log request
+25.2.2024, 16:29:45 - INFO - Sample log request
+25.2.2024, 16:29:52 - INFO - Sample log request
+25.2.2024, 16:30:14 - INFO - Sample log request
+25.2.2024, 16:30:24 - INFO - Sample log request
+25.2.2024, 16:30:36 - INFO - Sample log request
+25.2.2024, 16:30:52 - INFO - Sample log request
+25.2.2024, 16:33:36 - INFO - User login:  | {"_id":"65d7802399673396a4e0e17a","fullname":"admin","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000,"isAdmin":true}
+25.2.2024, 16:40:37 - INFO - Sample log request
+25.2.2024, 16:42:12 - INFO - Sample log request
+25.2.2024, 16:45:26 - INFO - Sample log request
+25.2.2024, 16:45:55 - INFO - User login:  | {"_id":"65db46518b32b7863a88b08f","fullname":"Roni","imgUrl":null,"score":100}
+25.2.2024, 16:47:16 - INFO - Sample log request
+25.2.2024, 16:47:28 - INFO - Sample log request
+25.2.2024, 16:48:26 - INFO - Sample log request
+25.2.2024, 16:48:37 - INFO - Sample log request
+25.2.2024, 16:48:46 - WARN - Roni tried to perform an admin action
+25.2.2024, 16:48:49 - WARN - Roni tried to perform an admin action
+25.2.2024, 16:48:58 - INFO - User login:  | {"_id":"65d7802399673396a4e0e17a","fullname":"admin","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000,"isAdmin":true}
+25.2.2024, 16:52:32 - INFO - Sample log request
+25.2.2024, 16:52:42 - INFO - Sample log request
+25.2.2024, 16:52:48 - INFO - Sample log request
+25.2.2024, 16:53:10 - INFO - Sample log request
+25.2.2024, 16:53:57 - INFO - Sample log request
+25.2.2024, 16:54:23 - INFO - Sample log request
+25.2.2024, 16:57:44 - INFO - Sample log request
+25.2.2024, 16:58:00 - INFO - User login:  | {"_id":"65d9fee1e9690df58c1d2699","fullname":"sarit","imgUrl":null,"score":100}
+25.2.2024, 17:04:03 - INFO - User login:  | {"_id":"65d7802399673396a4e0e17a","fullname":"admin","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":10000,"isAdmin":true}
+25.2.2024, 17:04:13 - INFO - Sample log request
+25.2.2024, 17:04:58 - INFO - Sample log request
+25.2.2024, 17:05:32 - INFO - Sample log request
+25.2.2024, 17:06:45 - INFO - Sample log request
+25.2.2024, 17:07:03 - INFO - User login:  | {"_id":"65db46518b32b7863a88b08f","fullname":"Roni","imgUrl":null,"score":100}
+25.2.2024, 17:07:16 - INFO - Sample log request
+25.2.2024, 17:16:22 - INFO - Sample log request
+25.2.2024, 17:17:02 - INFO - Sample log request
+25.2.2024, 17:17:19 - INFO - Sample log request
+25.2.2024, 17:17:59 - INFO - Sample log request
+25.2.2024, 17:19:32 - INFO - Sample log request
+25.2.2024, 17:20:04 - INFO - Sample log request
+25.2.2024, 17:21:08 - INFO - Sample log request
+25.2.2024, 17:22:08 - INFO - Sample log request
+25.2.2024, 17:22:47 - INFO - Sample log request
+25.2.2024, 17:22:49 - INFO - Sample log request
+25.2.2024, 17:22:59 - INFO - Sample log request
+25.2.2024, 17:23:01 - INFO - Sample log request
+25.2.2024, 17:23:21 - INFO - User login:  | {"_id":"65db2c5b1880e36d17d06eba","fullname":"Sarit Galanos","imgUrl":null,"score":100}
+25.2.2024, 17:23:22 - INFO - Sample log request
+25.2.2024, 17:23:24 - INFO - Sample log request
+25.2.2024, 17:23:40 - INFO - Sample log request
+25.2.2024, 18:07:18 - INFO - Up and running on port 3030

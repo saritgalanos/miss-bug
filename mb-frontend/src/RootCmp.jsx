@@ -11,6 +11,7 @@ import { UserDetails } from './pages/UserDetails.jsx'
 import { UserContext } from './contexts/UserContext.js'
 import { userService } from './services/user.service.js'
 import { useState } from 'react'
+import { MsgIndex } from './pages/MsgIndex.jsx'
 
 
 export function App() {
@@ -29,7 +30,8 @@ export function App() {
             <Route path='/bug/:bugId' element={<BugDetails />} />
             <Route path='/about' element={<AboutUs />} />
             <Route path='/user' element={<UserIndex />} />
-            <Route path='/profile' element={<UserDetails />} />
+            <Route path='/profile/:userId' element={<UserDetails />} />
+            <Route path='/msg' element={<MsgIndex />} />
           </Routes>
         </main>
         

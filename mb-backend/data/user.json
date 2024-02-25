@@ -53,5 +53,15 @@
     "_id": "1LN1g",
     "createdAt": 1708437384429,
     "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+  },
+  {
+    "username": "xxx",
+    "password": "$2b$10$XVo3t4HEA/i.lfwKGsPyuuGWh7hCqKPVLznEHbFUJ.u0cPf/84dUS",
+    "fullname": "xxxx xxx",
+    "_id": "65d782e799673396a4e0e17c",
+    "score": 10000,
+    "createdAt": 1708622165282,
+    "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
+    "isAdmin": true
   }
 ]

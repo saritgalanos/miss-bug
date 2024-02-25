@@ -63,10 +63,10 @@ export function AppHeader() {
     <header className='app-header '>
       <div className='header-container'>
         <nav className='app-nav'>
-          <NavLink to="/">Home</NavLink> |<NavLink to="/bug">Bugs</NavLink> |
+          <NavLink to="/">Home</NavLink> |<NavLink to="/bug">Bugs</NavLink> | <NavLink to="/msg">Messages</NavLink> |
           {isAllowed() && <NavLink to="/user">Users</NavLink>} 
            <NavLink to="/about">About</NavLink> |
-           <NavLink to="/profile">MyProfile</NavLink>
+           <NavLink to={`/profile/${loggedinUser?._id}`}>MyProfile</NavLink>
         </nav>
         <h1>Bugs are Forever</h1>
 

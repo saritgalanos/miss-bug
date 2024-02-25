@@ -17,8 +17,8 @@ export async function getUsers(req, res) {
             fullname: req.query.fullname || '',
             pageIdx: req.query.pageIdx || undefined
         } 
-        if (filterBy.pageIdx !== undefined) filterBy.pageIdx = +filterBy.pageIdx
-        console.log('in server get users:',filterBy)
+        // if (filterBy.pageIdx !== undefined) filterBy.pageIdx = +filterBy.pageIdx
+        // console.log('in server get users:',filterBy)
         
         const users = await userService.query(filterBy)
         res.send(users)
@@ -44,7 +44,7 @@ export async function updateUser(req, res) {
     const { _id, username, fullname, password, score } = req.body
     const userToSave = { _id, username, fullname, password, score: +score }
     try {
-        const savedUser = await userService.save(userToSave)
+        const savedUser = await userService.update(userToSave)
         res.send(savedUser)
     } catch (err) {
         loggerService.error('Failed to update user', err)
@@ -54,12 +54,10 @@ export async function updateUser(req, res) {
 
 
 export async function addUser(req, res) {
-    console.log(req.body)
-
     const { username, fullname, password, score } = req.body
     const userToSave = { username, fullname, password, score: +score }
     try {
-        const savedUser = await userService.save(userToSave)
+        const savedUser = await userService.add(userToSave)
         res.send(savedUser)
     } catch (err) {
         res.status(400).send(`couldn't save user`)
